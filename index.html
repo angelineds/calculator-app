@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.png">
+    
+    <title>Calculator app</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./main.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  <body id="main-body" class="dark_mode">
+    <div id="calc-container" class="dark_mode">
+
+      <div class="calc-container__header">
+        <h1>calc.</h1>
+        <div class="header-theme">
+          <p style="margin-bottom: 0.1rem;"> Theme</p>
+          <div class="theme-container">
+            <div class="theme-container__text">
+              <p>1</p>
+              <p>2</p>
+              <p>3</p>
+            </div>
+            <input 
+              type="range" name="points" onchange="filterme(this.value);" 
+              min="1" step="1" id="theme-toggle" class="dark_mode" max="3" 
+              value="1"
+            >
+          </div>
+        </div>
+      </div>
+
+      <div id="calc-screen" class="dark_mode">
+        <p>0</p>
+      </div>
+
+      <div id="keys-container" class="dark_mode">
+        <div class="keys-toggle__number">
+          <h2 class="num-keys num-keys_dark" data-value="7">7</h2>
+          <h2 class="num-keys num-keys_dark" data-value="8">8</h2>
+          <h2 class="num-keys num-keys_dark" data-value="9">9</h2>
+          <h2 class="del-keys del-keys_dark" data-value="DEL">DEL</h2>
+
+          <h2 class="num-keys num-keys_dark" data-value="4">4</h2>
+          <h2 class="num-keys num-keys_dark" data-value="5">5</h2>
+          <h2 class="num-keys num-keys_dark" data-value="6">6</h2>
+          <h2 class="num-keys num-keys_dark" data-value="+">+</h2>
+
+          <h2 class="num-keys num-keys_dark" data-value="1">1</h2>
+          <h2 class="num-keys num-keys_dark" data-value="2">2</h2>
+          <h2 class="num-keys num-keys_dark" data-value="3">3</h2>
+          <h2 class="num-keys num-keys_dark" data-value="-">-</h2>
+
+          <h2 class="num-keys num-keys_dark" data-value=".">.</h2>
+          <h2 class="num-keys num-keys_dark" data-value="0">0</h2>
+          <h2 class="num-keys num-keys_dark" data-value="/">/</h2>
+          <h2 class="num-keys num-keys_dark" data-value="x">x</h2>
+        </div>
+
+        <div class="keys-toggle__enter">
+          <h2 class="del-keys del-keys_dark" data-value="RESET">RESET</h2>
+          <h2 class="enter-keys enter-keys_dark" data-value="RESULT">=</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>, 
+      coded by <a href="https://github.com/angelineds">angeline</a>.
+    </div>
+
+  </body>
+</html>
