@@ -37,7 +37,7 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 
-- ### Links
+### Links
 
 - Live Site URL: [https://angelineds.github.io/calculator-app/](https://angelineds.github.io/calculator-app/)
 
